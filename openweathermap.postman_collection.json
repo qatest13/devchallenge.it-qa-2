@@ -1,0 +1,626 @@
+{
+	"info": {
+		"_postman_id": "5b23e8ec-ff14-460f-b8ba-3d1740eaacf6",
+		"name": "openweathermap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 Call current weather data for one location",
+			"description": "",
+			"item": [
+				{
+					"name": "By city name: exist, without space in the name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Baraboo&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Baraboo"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, with spaces in the name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Municipio Mario Briceño Iragorry&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Municipio Mario Briceño Iragorry"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, with space in the name and apostrophe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Mar’ina Roshcha&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Mar’ina Roshcha"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, parameters: only city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Thrakomakedones&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Thrakomakedones"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, very long name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Mittelschaeffolsheim&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Mittelschaeffolsheim"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, with dash in the name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Nasŏn-si&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Nasŏn-si"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, parameters: city and country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Ar Riqqah,kw&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Ar Riqqah,kw"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: exist, the same name for different countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Moscow,us&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Moscow,us"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By city name: nonexistent city name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?q=Baraboo1&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Baraboo1"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "1 city: By city ID",
+			"description": "",
+			"item": [
+				{
+					"name": "exist ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?id=1521379&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1521379"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nonexistent ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?id=152331379&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "152331379"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5714c6f5-59ab-4df9-a961-f00fd21f22b5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "05791863-00fe-4229-a98f-2922ff969cc5",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "1 city: By geographic coordinates",
+			"description": "",
+			"item": [
+				{
+					"name": "exist coordinates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "35"
+								},
+								{
+									"key": "lon",
+									"value": "139"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nonexistent coordinates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?lat=13&lon=139&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "13"
+								},
+								{
+									"key": "lon",
+									"value": "139"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "beea2c08-e858-45ab-be3a-40c895577389",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "910d3f0c-4cc5-4516-8c57-cbf9b3ef738a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "1 city: By ZIP code",
+			"description": "",
+			"item": [
+				{
+					"name": "exist ZIP code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "94040,us"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "nonexistent ZIP code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/weather?zip=941040,us&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "941040,us"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f19c4b51-0ab3-4dd4-ae62-1a8a49de7981",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d244bc6d-5fe1-46b2-93ce-bb06a09dac77",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Call current weather data for several cities",
+			"description": "",
+			"item": [
+				{
+					"name": "Cities within a rectangle zone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "api.openweathermap.org/data/2.5/box/city?bbox=12,32,15,37,10&appid=f37e147bed43fdce2549095349908dc8",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"box",
+								"city"
+							],
+							"query": [
+								{
+									"key": "bbox",
+									"value": "12,32,15,37,10"
+								},
+								{
+									"key": "appid",
+									"value": "f37e147bed43fdce2549095349908dc8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
